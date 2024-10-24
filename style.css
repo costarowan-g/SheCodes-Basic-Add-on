@@ -1,0 +1,27 @@
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.cities {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 300ms ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
