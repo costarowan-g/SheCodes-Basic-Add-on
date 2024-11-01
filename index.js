@@ -1,9 +1,12 @@
 function darkMode() {
   let mode = document.querySelector(".mode");
-  mode.classList.remove("mode");
-  mode.classList.add("dark");
+  if (mode.classList.contains("dark")) {
+    mode.classList.remove("dark");
+  } else {
+    mode.classList.add("dark");
+  }
   console.log(mode.classList);
 }
 
-let button = document.querySelector("button");
+let button = document.querySelector("#dark-button");
 button.addEventListener("click", darkMode);
